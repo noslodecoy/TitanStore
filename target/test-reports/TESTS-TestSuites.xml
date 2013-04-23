@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="ndwol01" id="0" name="AlbumControllerTests" package="titanstore" tests="1" time="2.612" timestamp="2013-04-23T01:57:23">
+      <properties />
+
+      <testcase classname="titanstore.AlbumControllerTests" name="testSomething" time="2.299" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="ndwol01" id="1" name="AlbumTests" package="titanstore" tests="1" time="1.597" timestamp="2013-04-23T01:57:25">
+      <properties />
+
+      <testcase classname="titanstore.AlbumTests" name="testSomething" time="0.979" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="ndwol01" id="2" name="CartItemTests" package="titanstore" tests="1" time="0.189" timestamp="2013-04-23T01:57:27">
+      <properties />
+
+      <testcase classname="titanstore.CartItemTests" name="testSomething" time="0.085" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="ndwol01" id="3" name="CartTests" package="titanstore" tests="2" time="0.273" timestamp="2013-04-23T01:57:27">
+      <properties />
+
+      <testcase classname="titanstore.CartTests" name="testAddAlbumToCart" time="0.146" />
+
+      <testcase classname="titanstore.CartTests" name="testRemoveAlbumFromCart" time="0.024" />
+
+      <system-out><![CDATA[--Output from testAddAlbumToCart--
+--Output from testRemoveAlbumFromCart--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testAddAlbumToCart--
+--Output from testRemoveAlbumFromCart--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="ndwol01" id="4" name="InventoryTests" package="titanstore" tests="2" time="0.248" timestamp="2013-04-23T01:57:28">
+      <properties />
+
+      <testcase classname="titanstore.InventoryTests" name="testAddAlbumToInventory" time="0.085" />
+
+      <testcase classname="titanstore.InventoryTests" name="testRemoveAlbumToInventory" time="0.022" />
+
+      <system-out><![CDATA[--Output from testAddAlbumToInventory--
+--Output from testRemoveAlbumToInventory--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testAddAlbumToInventory--
+--Output from testRemoveAlbumToInventory--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="ndwol01" id="5" name="SongControllerTests" package="titanstore" tests="1" time="0.591" timestamp="2013-04-23T01:57:28">
+      <properties />
+
+      <testcase classname="titanstore.SongControllerTests" name="testSomething" time="0.267" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="ndwol01" id="6" name="SongTests" package="titanstore" tests="1" time="0.306" timestamp="2013-04-23T01:57:29">
+      <properties />
+
+      <testcase classname="titanstore.SongTests" name="testSomething" time="0.159" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="ndwol01" id="7" name="StoreControllerTests" package="titanstore" tests="1" time="0.494" timestamp="2013-04-23T01:57:29">
+      <properties />
+
+      <testcase classname="titanstore.StoreControllerTests" name="testSomething" time="0.393" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="ndwol01" id="8" name="StoreTests" package="titanstore" tests="1" time="0.21" timestamp="2013-04-23T01:57:30">
+      <properties />
+
+      <testcase classname="titanstore.StoreTests" name="testSomething" time="0.073" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="ndwol01" id="9" name="UserControllerTests" package="titanstore" tests="6" time="3.079" timestamp="2013-04-23T01:57:30">
+      <properties />
+
+      <testcase classname="titanstore.UserControllerTests" name="testPasswordsMatch" time="0.57" />
+
+      <testcase classname="titanstore.UserControllerTests" name="testRegistrationFailed" time="0.183" />
+
+      <testcase classname="titanstore.UserControllerTests" name="testRegistrationSuccess" time="1.611" />
+
+      <testcase classname="titanstore.UserControllerTests" name="testLoginUserNotFound" time="0.359" />
+
+      <testcase classname="titanstore.UserControllerTests" name="testLoginPasswordInvalid" time="0.125" />
+
+      <testcase classname="titanstore.UserControllerTests" name="testLoginSuccess" time="0.108" />
+
+      <system-out><![CDATA[--Output from testPasswordsMatch--
+--Output from testRegistrationFailed--
+--Output from testRegistrationSuccess--
+--Output from testLoginUserNotFound--
+--Output from testLoginPasswordInvalid--
+--Output from testLoginSuccess--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testPasswordsMatch--
+--Output from testRegistrationFailed--
+--Output from testRegistrationSuccess--
+--Output from testLoginUserNotFound--
+--Output from testLoginPasswordInvalid--
+--Output from testLoginSuccess--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="ndwol01" id="10" name="UserTests" package="titanstore" tests="1" time="0.069" timestamp="2013-04-23T01:57:33">
+      <properties />
+
+      <testcase classname="titanstore.UserTests" name="testSomething" time="0.064" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
