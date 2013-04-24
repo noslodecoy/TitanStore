@@ -5,7 +5,7 @@ class AlbumController {
 
   def index() {
   }
-  
+
   def save() {
     def album = new Album( params["album"] )
     album.properties = params

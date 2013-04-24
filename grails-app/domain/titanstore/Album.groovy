@@ -1,8 +1,7 @@
 package titanstore
 
-class Album {
+class Album extends StoreItem {
 
-		String title
     String artist
 		static hasMany = [ songs: Song ]
 

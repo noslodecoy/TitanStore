@@ -2,21 +2,29 @@ package titanstore
 
 class Cart {
 
-    static hasMany = [ albums : Album ]
+    static hasMany = [ items : StoreItem ]
 
     Cart() {
-      albums = [ ]
+      items = [ ]
     }
     
     static constraints = {
     }
     
+    def addItem( StoreItem item ) {
+      items.add( item )
+    }
+    
     def addAlbum( Album album ) {          
-      albums.add( album )
+      items.add( album )
     }
 
     def removeAlbum( Album album ) {          
-      albums.remove( album )
+      items.remove( album )
+    }
+    
+    def addSong( Song song ) {
+      items.add( song )
     }
 
 }

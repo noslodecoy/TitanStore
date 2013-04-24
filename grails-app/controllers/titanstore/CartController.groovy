@@ -1,5 +1,7 @@
 package titanstore
 
-class StoreController {
+class CartController {
+
   def index() { }
+
 }

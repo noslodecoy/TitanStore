@@ -1,5 +1,5 @@
 package titanstore
 
 class SongController {
-		static scaffold = true
+  static scaffold = true
 }

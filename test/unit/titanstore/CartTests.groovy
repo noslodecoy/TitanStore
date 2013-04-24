@@ -13,7 +13,7 @@ class CartTests {
     void testAddAlbumToCart() {
       Cart cart = new Cart();
       cart.addAlbum( new Album( title: 'Me Against The World' ) );
-      int count = cart.albums.size();
+      int count = cart.items.size();
       assert( count == 1 );
     }
     
@@ -22,7 +22,7 @@ class CartTests {
       Album album = new Album( title: 'Me Against The World' );
       cart.addAlbum( album );
       cart.removeAlbum( album );
-      int count = cart.albums.size();
+      int count = cart.items.size();
       assert( count == 0 );
     }
 }
