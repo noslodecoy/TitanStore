@@ -1,0 +1,13 @@
+Testsuite: titanstore.CartTests
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.269 sec
+------------- Standard Output ---------------
+--Output from testAddAlbumToCart--
+--Output from testRemoveAlbumFromCart--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testAddAlbumToCart--
+--Output from testRemoveAlbumFromCart--
+------------- ---------------- ---------------
+
+Testcase: testAddAlbumToCart took 0.135 sec
+Testcase: testRemoveAlbumFromCart took 0.023 sec

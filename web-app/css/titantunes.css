@@ -1,0 +1,95 @@
+html {
+  background: #FAFAFA;
+}
+
+body {
+  background: #FAFAFA;
+  color: #333333;
+  margin: 0 auto;
+  max-width: 960px;
+  overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+.logo {
+  padding: 10px;
+  float: left;
+  width: 400px;
+}
+
+#loginBox, #loginBox * {
+  font-size: 11px;
+}
+
+#loginBox {
+  padding: 5px 10px 10px 0;
+  float: right;
+  width: 200px;
+}
+
+.loginField {
+  width: 100px;
+  margin:3px;
+}
+
+.loginFields {
+  text-align: right;
+}
+
+#registerPane {
+  text-align: center;
+}
+
+#page {
+  clear: both;
+  background: #FFF;
+  border-top: 4px solid #346;
+  border-bottom: 2px solid #346;
+  padding: 20px 0 100px 0;
+  -moz-box-shadow: 0 0 100px #EEE;
+  -webkit-box-shadow: 0 0 100px #EEE;
+  box-shadow: 0 0 100px #EEE;
+}
+
+#content {
+}
+
+#navPane {
+  width: 200px;
+  padding: 0 5px 0 10px;
+  float: left;
+}
+
+#navPane UL.menu {
+  list-style: none;
+  padding: 10px 0;
+}
+
+H1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+  margin: 5px 0;
+  padding: 0;
+}
+
+H3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+#main {
+  padding: 0 20px 20px 0;
+  float: left;
+  width: 720px;
+}
+
+#footer {
+  clear: both;
+  font-size: 11px;
+  padding: 15px 0;
+}

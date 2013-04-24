@@ -1,8 +1,6 @@
 package titanstore
 
-
 import grails.test.mixin.*
-import grails.test.mixin.TestMixin
 import grails.test.mixin.web.ControllerUnitTestMixin
 
 @TestMixin(ControllerUnitTestMixin)

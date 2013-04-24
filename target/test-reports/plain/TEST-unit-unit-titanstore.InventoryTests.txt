@@ -1,0 +1,13 @@
+Testsuite: titanstore.InventoryTests
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.412 sec
+------------- Standard Output ---------------
+--Output from testAddAlbumToInventory--
+--Output from testRemoveAlbumToInventory--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testAddAlbumToInventory--
+--Output from testRemoveAlbumToInventory--
+------------- ---------------- ---------------
+
+Testcase: testAddAlbumToInventory took 0.088 sec
+Testcase: testRemoveAlbumToInventory took 0.023 sec
