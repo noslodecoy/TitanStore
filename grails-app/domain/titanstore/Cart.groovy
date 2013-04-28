@@ -3,7 +3,8 @@ package titanstore
 class Cart {
 
     static hasMany = [ items : StoreItem ]
-    static belongsTo = [user:User]
+    static belongsTo = [ user: User ]
+    float total;
 
 
     Cart() {

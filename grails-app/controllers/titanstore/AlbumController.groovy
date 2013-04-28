@@ -3,8 +3,8 @@ package titanstore
 class AlbumController {
 	static scaffold = true
 
-  def index() {
-  }
+  //def index() {
+  //}
 
   def save() {
     def album = new Album( params["album"] )
