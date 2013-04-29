@@ -3,12 +3,10 @@ package titanstore
 class AlbumController {
 	static scaffold = true
 
-  //def index() {
-  //}
-  
-  def list() {
-    def albumList = Album.list()
-    [album:albumList.sort()]
+  AlbumController() {
+  }
+
+  def index() {
   }
 
   def save() {

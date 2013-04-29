@@ -15,12 +15,12 @@ class User {
       admin = false;
     }
   
-
     static constraints = {
  			login( blank: false, size: 5..15, unique: true )
 			password( blank: false, size: 5..15 )
       firstName( blank: false )
       lastName( blank: false )
+      cart( nullable: true )
     }
     
     def isAmin = {
@@ -29,6 +29,7 @@ class User {
 
     def makeAdmin = {
       admin = true;
+      merge()
     }
   
 }

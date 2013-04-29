@@ -5,22 +5,24 @@ class UserController {
  
   def index() { }
 
-  def profile () {
-    render view: "/store/index"
-  }
+//  def profile () {
+//    render view: "/store/index"
+//  }
       
   def music() {
     render view: "/store/index"
   }
   
   def logout () {
+    if ( session.user ) 
+      session.user = null;
     render view: "/store/index"
   }
     
   def login( LoginCommand cmd ) {
     if ( cmd.validate() ) {
       session.user = cmd.getUser()
-      redirect controller: "store"
+      render view: "/user/profile"
       return [ cmd ]
     } else {
       render view: "/store/index"
@@ -28,8 +30,9 @@ class UserController {
     }
   }
   
-  def makeUser() {
-    
+  def makeAdmin() {
+    session.user.makeAdmin()
+    render view: "/store/index"
   }
     
   def register() {

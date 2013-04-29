@@ -1,10 +1,9 @@
 <html>
   <head>
     <meta name="layout" content="main">
-    <title>Titan Music Store</title>
+    <title>Titan Music Store - Cart</title>
   </head>
   <body id="body">
-    <h1>Your online music store!</h1>
-    <p>Manage your own library, browse music and purchase new songs.</p>
+    <h1>Your cart</h1>
   </body>
 </html>

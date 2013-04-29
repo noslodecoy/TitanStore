@@ -24,9 +24,15 @@
     <g:if test="${session?.user}">
       <div style="margin-top:20px">
         <div style="float:right;">
-          <a href="#">Profile</a> | <g:link controller="user" action="logout">Logout</g:link><br>						
+          <g:link controller="user" action="profile">Profile</g:link> | <g:link controller="user" action="logout">Logout</g:link><br>						
         </div>
-        Welcome back <span id="userFirstName">${session?.user?.firstName}!</span><br><br>
+        <g:if test="${session?.user?.isAdmin()}">
+        Admin:
+        </g:if>
+        <g:else>
+        Welcome back
+        </g:else>
+        <span id="userFirstName">${session?.user?.firstName}!</span><br><br>
         You have purchased (${session.user.purchasedSongs?.size() ?: 0}) songs.<br>
         <li><g:link controller="user" action="music">My Music</g:link></li>
       </div>
@@ -62,16 +68,34 @@
       <div id="navPane">
         <h3>Browse:</h3>
         <ul class="menu">
+          <li><g:link controller="store" action="albums">Browse All</g:link></li>
+          
           <li><a href="#">Alternative</a></li>
           <li><a href="#">Classical</a></li>
           <li><a href="#">Hip-Hop</a></li>
           <li><a href="#">Indie</a></li>
           <li><a href="#">Rock</a></li>
         </ul>
+        
+        <g:if test="${session?.user}">
+          <ul class="menu">
+              <li><g:link controller="cart" action="">View Cart</g:link></li>
+          </ul>
+        </g:if>
+        
+        <g:if test="${session?.user?.isAdmin()}">
+          <ul class="menu">
+            <li><g:link controller="genre" action="create">Add Genre</g:link></li>
+            <li><g:link controller="album" action="create">Add Album</g:link></li>
+            <li><g:link controller="song" action="create">Add Song</g:link></li>
+          </ul>
+        </g:if>
+
+        
       </div>
 
       <div id="main">
-        <g:layoutBody />					
+        <g:layoutBody />
       </div>
     </div>
     <br style="clear: both;" />
