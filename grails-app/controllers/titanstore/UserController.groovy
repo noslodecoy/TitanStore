@@ -27,6 +27,10 @@ class UserController {
       return [ cmd ]
     }
   }
+  
+  def makeUser() {
+    
+  }
     
   def register() {
     if ( request.method == 'POST' ) {

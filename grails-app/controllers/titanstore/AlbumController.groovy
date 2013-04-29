@@ -5,14 +5,24 @@ class AlbumController {
 
   //def index() {
   //}
+  
+  def list() {
+    def albumList = Album.list()
+    [album:albumList.sort()]
+  }
 
   def save() {
-    def album = new Album( params["album"] )
-    album.properties = params
-    if ( album.save() ) {
-      redirect action: "show", id:album.id
+    if ( session.user.isAdmin() ) {
+    
+      def album = new Album( params["album"] )
+      album.properties = params
+      if ( album.save() ) {
+        redirect action: "show", id:album.id
+      } else {
+        render view: "edit", model: [album:album]
+      }
     } else {
-      render view: "edit", model: [album:album]
+      redirect controller: "store"
     }
   }
 
