@@ -11,7 +11,7 @@
         <tr>
           <td>${it.title}</td>
           <td>${it.price}</td>
-          <td><g:link controller="cart" action="add" params="[add: it.id]">Add to cart</g:link></td>
+          <td><g:link controller="cart" action="add" params="[album: it.id]">Add to cart</g:link></td>
         </tr>
         <span class="tag"></span>
         <span class="tag"></span>

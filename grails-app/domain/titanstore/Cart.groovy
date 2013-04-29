@@ -2,16 +2,15 @@ package titanstore
 
 class Cart {
 
-    static hasMany = [ items : StoreItem ]
+    static hasMany = [ items : CartItem ]
     float total;
-    
-    User user;
 
+    User user;
 
     Cart() {
       def items = [ ]
     }
-    
+
     static constraints = {
       total(blank:false, scale:2)
       items(blank:false)
@@ -21,8 +20,12 @@ class Cart {
       items.add( item )
     }*/
     
-    def addAlbum( Album album ) {          
-      items.add( album )
+    def addAlbum( Album album ) {
+      if (!items) {
+        items = []
+      }
+      CartItem crtItm = new CartItem( album )
+      items.add( crtItm )
     }
 
     def removeAlbum( Album album ) {          
