@@ -8,7 +8,7 @@ class User {
     String lastName;
     boolean admin;
     
-    static hasOne = [ cart: Cart ]
+    Cart cart;
 		static hasMany = [ purchasedSongs: Song ];
     
     def User = {
@@ -30,6 +30,15 @@ class User {
     def makeAdmin = {
       admin = true;
       merge()
+    }
+    
+    
+    def getUserCart() {
+      if ( !cart ) {
+        cart = new Cart();
+        cart.save();
+      }
+      return cart;
     }
   
 }

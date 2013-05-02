@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="ndwol01" name="titanstore.CartTests" tests="2" time="0.221" timestamp="2013-05-02T18:00:10">
+  <properties />
+  <testcase classname="titanstore.CartTests" name="testAddAlbumToCart" time="0.148" />
+  <testcase classname="titanstore.CartTests" name="testRemoveAlbumFromCart" time="0.066" />
+  <system-out><![CDATA[--Output from testAddAlbumToCart--
+--Output from testRemoveAlbumFromCart--
+]]></system-out>
+  <system-err><![CDATA[--Output from testAddAlbumToCart--
+--Output from testRemoveAlbumFromCart--
+]]></system-err>
+</testsuite>

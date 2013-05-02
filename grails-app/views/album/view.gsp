@@ -4,6 +4,6 @@
     <title>Titan Music Store - Cart</title>
   </head>
   <body id="body">
-    <h1>An Album</h1>
+    <h1>${album.title}</h1>
   </body>
 </html>

@@ -2,14 +2,17 @@ package titanstore
 
 class CartItem extends StoreItem {
 
-    static belongsTo = [ cart: Cart ]
+  StoreItem storeItem;
   
-    static constraints = {
-    }
-    
-    CartItem( StoreItem itm ) {
-      title = itm.title;
-      price = itm.price;
-    }
+  static belongsTo = [ cart: Cart ]
+
+  static constraints = {
+  }
+
+  CartItem( StoreItem itm ) {
+    storeItem = itm;
+    title = itm.title;
+    price = itm.price;
+  }
 
 }

@@ -7,6 +7,12 @@ class AlbumController {
   }
 
   def index() {
+    redirect action: "view"
+  }
+  
+  def view( Long id ) {
+    def album = Album.get(id)
+    [album : album ]
   }
 
   def save() {

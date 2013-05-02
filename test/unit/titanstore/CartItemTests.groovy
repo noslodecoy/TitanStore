@@ -11,6 +11,10 @@ import org.junit.*
 @TestFor(CartItem)
 class CartItemTests {
 
-    void testSomething() {
+    void testCartItemFromAlbum() {
+      Album album = new Album( title: 'Me Against The World' );
+      CartItem item = new CartItem( album );
+      assertEquals 'Me Against The World', item.title
     }
+
 }

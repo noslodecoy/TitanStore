@@ -5,10 +5,10 @@ class Cart {
     static hasMany = [ items : CartItem ]
     float total;
 
-    User user;
+    static belongsTo = [ user: User ]
 
     Cart() {
-      def items = [ ]
+      items = [ ]
     }
 
     static constraints = {
@@ -21,15 +21,17 @@ class Cart {
     }*/
     
     def addAlbum( Album album ) {
-      if (!items) {
-        items = []
-      }
       CartItem crtItm = new CartItem( album )
       items.add( crtItm )
     }
 
-    def removeAlbum( Album album ) {          
-      items.remove( album )
+    def removeAlbum( Album album ) {
+      def cartItem = items.find { it.title == 'Me Against The World' }
+      items.remove( cartItem )
+    }
+    
+    def getAllItems() {
+      return items;
     }
     
     /*def addSong( Song song ) {

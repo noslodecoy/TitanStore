@@ -2,15 +2,18 @@ package titanstore
 
 class CartController {
 
-  def index() { }
-  
+  def index() {
+    def cart = session.user.getUserCart()
+    [ cartItemList : cart.getItems().sort() ]
+  }
+
   def add() {
-    Album a = Album.findById( params.album )
-    if ( !session.user.cart ) {
-      session.user.cart = new Cart();
-    }
-    session.user.cart.addAlbum( a );
-    session.user.cart.save()
+    //Cart cart = new Cart();
+    def a = Album.findById( params.album )
+    def cart = session.user.getUserCart();
+    cart.addAlbum( a );
+    cart.save()
+    redirect view: "index"
   }
 
 }
