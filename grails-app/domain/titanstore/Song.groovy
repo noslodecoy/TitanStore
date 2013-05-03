@@ -1,17 +1,16 @@
 package titanstore
 
 class Song extends StoreItem { 
-
-		String artist
-		int duration
-    float price
+    
     String title
+    String artist
+    float duration
+    float price
 		
-		static belongsTo = [ album: Album ]
+    static belongsTo = [ X: X ]
 
-    static constraints = {
-			title( blank: false )
-			artist( blank: false )
-			duration( min : 1 )
+    static constraints = {title( blank: false )
+			  artist( blank: false )
+			  duration( min : 1 )
     }
 }
